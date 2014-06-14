@@ -1,0 +1,4 @@
+selfservicejms
+==============
+
+JMS auto sending.
