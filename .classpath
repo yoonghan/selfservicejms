@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" output="target/classes" path="src/main/java">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="src/test/resources"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry excluding="**" kind="src" output="target/classes" path="src/main/resources">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" output="target/test-classes" path="src/test/java">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/SelfProject/EAP-6.2.0/jboss-eap-6.2/modules/system/layers/base/org/jboss/remote-naming/main/jboss-remote-naming-1.0.7.Final-redhat-1.jar"/>
+	<classpathentry kind="lib" path="C:/SelfProject/EAP-6.2.0/jboss-eap-6.2/modules/system/layers/base/org/jboss/xnio/nio/main/xnio-nio-3.0.7.GA-redhat-1.jar"/>
+	<classpathentry kind="lib" path="C:/SelfProject/EAP-6.2.0/jboss-eap-6.2/modules/system/layers/base/org/jboss/xnio/main/xnio-api-3.0.7.GA-redhat-1.jar"/>
+	<classpathentry kind="lib" path="C:/SelfProject/EAP-6.2.0/jboss-eap-6.2/modules/system/layers/base/org/jboss/ejb-client/main/jboss-ejb-client-1.0.24.Final-redhat-1.jar"/>
+	<classpathentry kind="lib" path="C:/SelfProject/EAP-6.2.0/jboss-eap-6.2/modules/system/layers/base/org/jboss/genericjms/main/generic-jms-ra-jar-1.0.1.Final-redhat-1.jar"/>
+	<classpathentry kind="lib" path="C:/SelfProject/EAP-6.2.0/jboss-eap-6.2/modules/system/layers/base/org/hornetq/main/hornetq-jms-client-2.3.12.Final-redhat-1.jar"/>
+	<classpathentry kind="lib" path="C:/SelfProject/EAP-6.2.0/jboss-eap-6.2/modules/system/layers/base/org/jboss/logging/main/jboss-logging-3.1.2.GA-redhat-1.jar"/>
+	<classpathentry kind="lib" path="C:/SelfProject/EAP-6.2.0/jboss-eap-6.2/modules/system/layers/base/org/jboss/log4j/logmanager/main/log4j-jboss-logmanager-1.0.2.Final-redhat-1.jar"/>
+	<classpathentry kind="lib" path="C:/SelfProject/EAP-6.2.0/jboss-eap-6.2/modules/system/layers/base/org/jboss/logmanager/main/jboss-logmanager-1.5.1.Final-redhat-1.jar"/>
+	<classpathentry kind="lib" path="C:/SelfProject/EAP-6.2.0/jboss-eap-6.2/modules/system/layers/base/org/jboss/remoting3/main/jboss-remoting-3.2.18.GA-redhat-1.jar"/>
+	<classpathentry kind="output" path="target/classes"/>
+</classpath>
