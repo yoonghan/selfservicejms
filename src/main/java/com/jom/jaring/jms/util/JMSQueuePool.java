@@ -1,11 +1,11 @@
-package com.self.service.jms.util;
+package com.jom.jaring.jms.util;
 
 import java.io.IOException;
 import java.util.HashMap;
-import java.util.Properties;
 
 import com.google.common.base.Optional;
-import com.self.service.jms.impl.PropertyFiles;
+import com.jaring.jom.jms.impl.PropertyFiles;
+import com.jaring.jom.util.common.PropertyLoaderUtil;
 
 public class JMSQueuePool {
 
@@ -33,14 +33,15 @@ public class JMSQueuePool {
 	}
 	
 	private final synchronized JMSQueue initQueue(String queueName){
-		JMSReader reader;
+		
 		JMSQueue queue = null;
 		try {
-			reader = new JMSReader();
-			Properties prop = reader.getProp();
-			queue = new JMSQueue(prop, 
-					prop.getProperty(queueName+PropertyFiles.JMS_DIFF_QUEUE_KEY+PropertyFiles.JMS_FACTORY_KEY),
-					prop.getProperty(queueName+PropertyFiles.JMS_DIFF_QUEUE_KEY+PropertyFiles.JMS_NAME_KEY),
+			JMSBean jmsBean = new JMSBean(queueName);
+			new PropertyLoaderUtil().loadProperty(PropertyFiles.JMSReader, jmsBean);
+
+			queue = new JMSQueue(jmsBean.getProp(), 
+					jmsBean.getJmsFactory(),
+					jmsBean.getJmsKeyName(),
 					queueName);
 			if(queue != null){
 				queuePool.put(queueName , queue);

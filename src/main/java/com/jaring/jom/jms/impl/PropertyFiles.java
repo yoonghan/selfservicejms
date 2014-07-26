@@ -1,4 +1,4 @@
-package com.self.service.jms.impl;
+package com.jaring.jom.jms.impl;
 
 public interface PropertyFiles {
 	public static final String JMSReader="/selfservicejms.properties";

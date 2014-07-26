@@ -1,4 +1,4 @@
-package com.self.service.jms.util;
+package com.jom.jaring.jms.util;
 
 import java.util.ArrayList;
 import java.util.Enumeration;
@@ -18,11 +18,9 @@ import javax.jms.TextMessage;
 import javax.naming.InitialContext;
 import javax.naming.NamingException;
 
-import com.self.service.jms.impl.PropertyFiles;
+import com.jaring.jom.jms.impl.PropertyFiles;
 
 public class JMSQueue implements AutoCloseable{
-	
-	//private final String CLASS_NAME = "com.self.service.jms.util.JMSUtil";
 	
 	private Connection conn = null;
 	private Queue queue = null;
